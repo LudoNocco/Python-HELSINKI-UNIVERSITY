@@ -1,7 +1,13 @@
-# University of Helsinki: "Introduction to Programming, 5 ECTS" and "Advanced Course in Programming, 5 ECTS"
+# University of Helsinki: "BSCS1001 Introduction to Programming, 5 ECTS" and "BSCS1002 Advanced Course in Programming, 5 ECTS"
  
-In here I will be uploading my solutions to the practical exercises needed to receive academic credit for the following two courses, offered by the Department of Computer Science at the University of Helsinki: "BSCS1001 Introduction to Programming, 5 ECTS" and "BSCS1002 Advanced Course in Programming, 5 ECTS", a.k.a. [University of Helsinki’s free massive open online course (MOOC) on Python Programming](https://programming-24.mooc.fi/).
-As mentioned, the course is split up into two individual courses, and each course consists of seven parts, each with its own exercise set. The structure is outlined below:
+In here I will be uploading my solutions to the practical exercises needed to receive academic credit for the following two courses, offered by the Department of Computer Science at the University of Helsinki:
+* "BSCS1001 Introduction to Programming, 5 ECTS" 
+* "BSCS1002 Advanced Course in Programming, 5 ECTS"
+
+These are also known as [University of Helsinki’s free massive open online course (MOOC) on Python Programming](https://programming-24.mooc.fi/).
+As mentioned, the course is split up into two individual courses, and each course consists of seven parts, each with its own exercise set. 
+
+The course structure is outlined below:
 
 -------------------------------------------------------------------
 ## Course Contents ##
