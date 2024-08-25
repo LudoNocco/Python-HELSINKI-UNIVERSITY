@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# mooc-programming-24
- Helsinki University Python courses I and II for 10 ECTS
-
-=======
 # University of Helsinki: "BSCS1001 Introduction to Programming, 5 ECTS" and "BSCS1002 Advanced Course in Programming, 5 ECTS"
  
 In here I will be uploading my solutions to the practical exercises needed to receive academic credit for the following two courses, offered by the Department of Computer Science at the University of Helsinki:
