@@ -403,4 +403,3 @@ The course structure is outlined below:
     1. Quiz: Own game
     2. Quiz: Feedback, part 14
     3. Quiz: Final quiz, Advanced Course
->>>>>>> 0b0e243104d3b72f6b69a3c67d4d348ad1bf671b
