@@ -1,4 +1,5 @@
-# WRITE YOUR SOLUTION HERE:
+
+
 class ShoppingList:
     def __init__(self):
         self.products = []
