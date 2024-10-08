@@ -10,5 +10,5 @@ class ExamResult:
         return (f'Name:{self.name}, grade1: {self.grade1}' +
             f', grade2: {self.grade2}, grade3: {self.grade3}')
     
-    def best_results(self):
-        return max[(self.grade1, self.grade2, self.grade3)]
+def best_results(results: list):
+    return [max(r.grade1, r.grade2, r.grade3) for r in results]

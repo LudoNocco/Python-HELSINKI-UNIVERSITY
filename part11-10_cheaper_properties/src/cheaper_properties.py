@@ -22,4 +22,5 @@ class RealProperty:
         return (f'RealProperty(rooms = {self.rooms}, square_meters = {self.square_meters}, ' + 
             f'price_per_sqm = {self.price_per_sqm}, description = {self.description})')
 
-# WRITE YOUR SOLUTION HERE:
+def cheaper_properties(properties: list, reference: RealProperty):
+    return [(real_property, real_property.price_difference(reference)) for real_property in properties if (real_property.price_per_sqm * real_property.square_meters) < (reference.price_per_sqm * reference.square_meters)]

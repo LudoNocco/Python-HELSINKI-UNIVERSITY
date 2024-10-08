@@ -1,4 +1,5 @@
-
+def products_in_shopping_list(shopping_list, amount: int):
+    return [product for product, qty in shopping_list if qty >= amount]
 
 class ShoppingList:
     def __init__(self):
