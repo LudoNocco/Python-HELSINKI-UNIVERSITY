@@ -7,15 +7,24 @@ class SuperHero:
         return f'{self.name}, superpowers: {self.superpowers}'
     
 class SuperGroup:
-    def __init__(self, name: str, location: str, members: list = []):
-        self.__name = name
-        self.__location = location
-        self.__members = members
+    def __init__(self, name: str, location: str):
+        self._name = name
+        self._location = location
+        self._members = []
 
     @property
-    def add_member(hero: SuperHero):
-        self.__members.append(hero)
+    def name(self):
+        return self._name
 
     @property
+    def location(self):
+        return self._location
+
+    def add_member(self, hero: SuperHero):
+        self._members.append(hero)
+
     def print_group(self):
-        print(self.__members)  
+        print(f'{self._name}, {self._location}')
+        print('Members:')
+        for member in self._members:
+            print(member)

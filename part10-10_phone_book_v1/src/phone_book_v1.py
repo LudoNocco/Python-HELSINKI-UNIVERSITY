@@ -5,7 +5,6 @@ class PhoneBook:
 
     def add_number(self, name: str, number: str):
         if not name in self.__persons:
-            # add a new dictionary entry with an empty list for the numbers
             self.__persons[name] = []
 
         self.__persons[name].append(number)
@@ -14,7 +13,6 @@ class PhoneBook:
         if not name in self.__persons:
             return None
         return self.__persons[name]
-
 
     def all_entries(self):
         return self.__persons
@@ -53,6 +51,7 @@ class PhoneBookApplication:
         print("0 exit")
         print("1 add entry")
         print("2 search")
+        print("3 search by number")
 
     def add_entry(self):
         name = input("name: ")
@@ -63,14 +62,21 @@ class PhoneBookApplication:
         name = input("name: ")
         numbers = self.__phonebook.get_numbers(name)
         if numbers == None:
-            print("number unknown")
+            print("unknown number")
             return
         for number in numbers:
             print(number)
+    
+    def searchbynumber(self):
+        number = input("number: ")
+        for name, numbers in self.__phonebook.all_entries().items():
+            if number in numbers:
+                print(name)
+                return
+        print("unknown number")
 
     def exit(self):
         self.__filehandler.save_file(self.__phonebook.all_entries())
-
 
     def execute(self):
         self.help()
@@ -84,6 +90,8 @@ class PhoneBookApplication:
                 self.add_entry()
             elif command == "2":
                 self.search()
+            elif command == "3":
+                self.searchbynumber()
             else:
                 self.help()
 
