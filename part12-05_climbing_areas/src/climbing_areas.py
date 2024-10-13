@@ -23,8 +23,8 @@ class ClimbingArea:
             return route.grade
 
         routes_in_order = sorted(self.__routes, key=by_difficulty)
-        # last route
-        return routes_in_order[-1]
+        def sort_by_number_of_routes:
+
 
     def __str__(self):
         hardest_route = self.hardest_route()

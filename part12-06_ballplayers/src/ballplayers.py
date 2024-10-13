@@ -10,5 +10,11 @@ class BallPlayer:
         return (f'BallPlayer(name={self.name}, number={self.number}, '
             f'goals={self.goals}, passes={self.passes}, minutes={self.minutes})')
 
+    def most_goals(self):    
+        return max(self.goals)
+    
+    def most_points(self):
+        return max(self.passes + self.goals)
 
-# Write your solution here
+    def least_minutes(self):
+        return min(self.minutes)

@@ -9,4 +9,11 @@ class CourseAttempt:
     def __str__(self):
         return f"{self.course_name} ({self.credits} cr) grade {self.grade}"
 
-# Write your solution
+def accepted(attempts: list):
+    return reduce(lambda total, attempt: total + attempt.credits, attempts, 0)
+
+def sum_of_all_credits(attempts: list):
+    return reduce(lambda total, attempt: total + attempt.credits, attempts, 0)
+
+def sum_of_passed_credits(attempts: list):
+    return reduce(lambda total, attempt: total + attempt.credits if attempt.grade > 5 else total, attempts, 0)
