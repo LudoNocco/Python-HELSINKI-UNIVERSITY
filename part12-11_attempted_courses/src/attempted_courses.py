@@ -7,8 +7,8 @@ class CourseAttempt:
     def __str__(self):
         return f"{self.student_name}, grade for the course {self.course_name} {self.grade}"
 
-def names_of_students(attempted_courses: list):
-    return map(lambda x: x.student_name, attempted_courses)
+def names_of_students(attempts: list):
+    return list(map(lambda attempt: attempt.student_name, attempts))
 
-def course_names(attempted_courses: list):
-    return map(lambda x: x.course_name, attempted_courses)
+def course_names(attempts: list):
+    return sorted(set(map(lambda attempt: attempt.course_name, attempts)))

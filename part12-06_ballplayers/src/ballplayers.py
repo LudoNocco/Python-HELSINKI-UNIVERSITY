@@ -10,11 +10,12 @@ class BallPlayer:
         return (f'BallPlayer(name={self.name}, number={self.number}, '
             f'goals={self.goals}, passes={self.passes}, minutes={self.minutes})')
 
-    def most_goals(self):    
-        return max(self.goals)
-    
-    def most_points(self):
-        return max(self.passes + self.goals)
+def most_goals(players: list):
+    return max(players, key=lambda player: player.goals).name
 
-    def least_minutes(self):
-        return min(self.minutes)
+def most_points(players: list):
+    top_player = max(players, key=lambda player: player.goals + player.passes)
+    return (top_player.name, top_player.number)
+
+def least_minutes(players: list):
+    return min(players, key=lambda player: player.minutes)
